@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+/*Auxiliares*/
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 1280px;
+}
+.clear{
+    clear: both;
+}
+/*Fim Auxiliares*/
+.destaque{
+    background-image: url('../images/praiudo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+}
+header{
+    background-image: linear-gradient(to bottom right, black, transparent);
+    padding: 20px 0;
+    position: relative;
+    z-index: 3;
+}
+header:hover{
+    background-color: rgb(0,0,0);
+    transition: 0.7s;
+}
+.header-left{
+    float: left;
+    display: flex;
+}
+.header-left img{
+    max-width: 130px;
+    margin-top: 5px;
+}
+.menu-header-left{
+    margin-bottom: 20px;
+}
+.menu-header-left a{
+    margin: 12px 15px 0px 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.menu-header-left a:hover{
+    color: red;
+    transition: 0.3s;
+}
+.menu-header-right{
+    float: right;
+    margin-top: 15px;
+}
+.menu-header-right i{
+    color: white;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menu-header-right p{
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+}
+.notifications{
+    position:absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    right: 90px;
+}
+.descricao-destaque{
+    position: relative;
+    z-index: 3;
+    color: white;
+    top: 150px;
+    padding: 20px 40px;
+}
+.descricao-destaque h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: red;
+}
+.descricao-destaque h3{
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.descricao-destaque a:nth-of-type(1){
+    margin-left: 0;
+}
+.descricao-destaque a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    background-color: rgb(0,0,0,0.4);
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.descricao-destaque a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.descricao-destaque i{
+    margin-right: 10px;
+}
+section.vitrine{
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.vitrine-flex{
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+.vitrine-single{
+    width: 100%;
+    padding-top: calc(16.6% / 2);
+    float: left;
+    position: relative;
+    margin-bottom: -320px;
+}
+.vitrine-single-wraper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/suits.jpeg');
+    cursor: pointer;
+}
+.vitrine-single-wraper:hover{
+    transition: 0.7s;
+    transform: scale(1.2,1.2);
+}
+@media screen and (max-width:768px){
+    .menu-header-left{
+        display: none;
+    }
+    .descricao-destaque{
+        color: white;
+        top: 50px;
+        text-align: center;
+    }
+    .descricao-destaque a{
+        margin: 8px auto;
+        display: block;
+        width: 60%;
+
+    }
+    .descricao-destaque a:nth-of-type(1){
+        margin:0 auto;
+    }
+    .vitrine-single{
+        width: 100%;
+        padding-top:calc(100% / 10);
+        float: left;
+        position: relative;
+        margin-bottom: -850px;
+    }
+    .vitrine-single-wraper{
+        background-size: cover;
+    }
+}
