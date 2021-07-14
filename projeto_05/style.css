@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.container{
+    padding: 0 2%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+section.main{
+    background-image: url('images/bg.svg');
+    background-size: cover;
+    background-position: center;
+    min-height: 880px;
+}
+.header{
+    display: flex;
+}
+.logo{
+    width: 30%;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    padding-top: 30px;
+    display: inline-block;
+    color: rgb(255, 239, 64);
+}
+.logo a span{
+    font-weight: bold;
+    color: white;
+}
+.menu{
+    width: 70%;
+    text-align: right;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 15px;
+    font-weight: bold;
+    padding: 0 6px 4px 6px;
+}
+.menu a:hover{
+    border-bottom: 2px solid rgb(255, 239, 64);
+}
+.menu a.btn{
+    background-color: rgb(0, 30, 255);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 0;
+}
+.menu a.btn:hover{
+    background-color: rgb(1, 15, 112)
+}
+.menu-mobile{
+    display: none;
+    width: 100%;
+}
+.menu-mobile i{
+    position: relative;
+    left: 80%;
+    top: 45px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.menu-mobile ul{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+.menu-mobile a{
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: rgb(0, 30, 255);
+    font-size: 20px;
+}
+.mockup{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.mockup h2{
+    color: rgb(255, 239, 64);
+    font-size: 65px;
+    padding: 15px 0;
+}
+.mockup p{
+    font-weight: bold;
+    padding: 12px 0;
+}
+.mockup img{
+    max-width: 100%;
+}
+.brands .container{
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+}
+.brands img{
+    max-width: 100%;
+    width: 20%;
+}
+.sobre{
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(245, 245, 245);
+}
+.sobre h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.sobre p{
+    font-weight: bold;
+    padding: 15px 0;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.box__single{
+    background-color: white;
+    width: 31%;
+    margin-left: 2%;
+    text-align:left;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.box__single h3{
+    font-weight: bold;
+}
+.banner{
+    padding: 50px 0;
+    background-image: url('images/banner_meio.svg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.banner h2{
+    font-size: 40px;
+    padding: 15px 0;
+}
+.banner a{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 15px 55px;
+    background-color: rgb(255, 239, 64);
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 30, 255);
+    border-radius: 10px;
+}
+.beneficios{
+    padding: 30px 0;
+}
+.beneficios .container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.container .beneficios__wraper__1{
+    width: 40%;
+}
+.container .beneficios__wraper__1 h1{
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+.container .beneficios__wraper__1 a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 30, 255);
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.checklist{
+    display: flex;
+    align-items: center;
+}
+.checklist img{
+    position: relative;
+    top: 7px;
+    left: -27px;
+    width: 20%;
+}
+.checklist span{
+    width: 90%;
+}
+.container .beneficios__wraper__2{
+    width: 60%;
+}
+.container .beneficios__wraper__2 img{
+    max-width: 100%;
+}
+.depoimentos{
+    padding: 40px 0;
+    background-color: rgb(245, 245, 245);
+}
+.depoimentos h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 40px 0;
+}
+.depoimentos .container{
+    display: block;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.depoimento__box{
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding: 15px 1%;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid rgb(245, 245, 245);
+}
+.depoimento__box img{
+    max-width: 100%;
+    padding: 10px 0;
+}
+.depoimento__box h2,
+.depoimento__box h4,
+.depoimento__box p{
+    padding: 10px 0;
+}
+.slick-dotted ul{
+    list-style-type: none;
+    position: relative;
+    top: 15px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+.slick-dotted button:focus{
+    outline: none;
+    color: rgb(0, 30, 255);
+    background-color: rgb(0, 30, 255);
+}
+.slick-dotted li button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: none;
+    background-color: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+    border: none;
+}
+li.slick-active button{
+    color: rgb(0, 30, 255);
+    background-color: rgb(0, 30, 255);
+}
+
+
+.slick-slide:focus{
+    outline: none;
+}
+.contato{
+    padding: 40px 0;
+    text-align: center;
+}
+.contato h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+form input[type=text],
+form input[type=email]{
+    width: 60%;
+    margin: 0 auto;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+form input[type=text],
+form input[type=email]:focus{
+    outline: 0;
+}
+textarea{
+    width: 60%;
+    resize: vertical;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+textarea:focus{
+    outline: 0;
+}
+form input[type=submit]{
+    width: 60%;
+    background-color: rgb(0, 30, 255);
+    color: white;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px;
+}
+form input[type=submit]:hover{
+    background-color: rgb(1, 15, 112);
+}
+footer{
+    padding: 15px 0 40px 0;
+    background-color: rgb(0, 30, 255);
+}
+footer .container{
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+}
+footer menu{
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .mockup{
+        margin-top: 20px;
+    }
+    .brands img{
+        max-width: 60%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .box__single{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .beneficios .container{
+        flex-wrap: wrap;
+    }
+    .container .beneficios__wraper__1{
+        width: 100%;
+        text-align: center;
+    }
+    .container .beneficios__wraper__2{
+        width: 100%;
+    }
+}
